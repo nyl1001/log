@@ -1,4 +1,4 @@
-module yunion.io/x/log
+module github.com/nyl1001/log
 
 go 1.12
 

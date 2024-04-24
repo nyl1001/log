@@ -19,8 +19,8 @@ import (
 	"runtime"
 	"sync"
 
+	"github.com/nyl1001/log/hooks"
 	"github.com/sirupsen/logrus"
-	"yunion.io/x/log/hooks"
 )
 
 var (
@@ -52,9 +52,13 @@ type Verbose bool
 // The returned value is a boolean of type Verbose, which implements Infof, and Printf etc.
 // These methods will write to the Info log if called.
 // Thus, one may write either
+//
 //	if log.V(2) { log.Infof("log this") }
+//
 // or
+//
 //	log.V(2).Infof("log this")
+//
 // The second form is shorter but the first is cheaper if logging is off because it does
 // not evaluate its arguments.
 //

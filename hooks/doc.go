@@ -12,4 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package hooks // import "yunion.io/x/log/hooks"
+package hooks // import "github.com/nyl1001/log/hooks"
